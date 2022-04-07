@@ -1,10 +1,23 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let array = word.split("")
+  let reversed = array.reverse().join("")
+  if (reversed === word){
+    return true
+  }
+  else {
+    return false
+  }
 }
+let word = 'toy'
+isPalindrome(word)
 
 /* 
   Add your pseudocode here
-*/
+  .reverse() is a method that reverses the elements in an array.
+  so first we need to turn the string into an array.
+  then reverse it and see if it is still equal to the original word. 
+
 
 /*
   Add written explanation of your solution here
